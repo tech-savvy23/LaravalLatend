@@ -1,0 +1,32 @@
+{
+    "type": "api",
+    "fields": [
+        {
+            "name": "booking_id",
+            "type": "unsignedBigInteger",
+            "index": true
+        },
+        {
+            "name": "space_id",
+            "type": "unsignedBigInteger",
+            "index": true
+        },
+        {
+            "name": "has_space_type",
+            "type": "boolean",
+            "def": "false"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "booking",
+            "type": "belongsTo",
+            "model": "Booking"
+        },
+        {
+            "name": "space",
+            "type": "belongsTo",
+            "model": "Space"
+        }
+    ]
+}

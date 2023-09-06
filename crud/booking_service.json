@@ -1,0 +1,32 @@
+{
+    "type": "api",
+    "fields": [
+        {
+            "name": "booking_id",
+            "type": "unsignedBigInteger",
+            "index": true
+        },
+        {
+            "name": "service_id",
+            "type": "unsignedBigInteger",
+            "index": true
+        },
+        {
+            "name": "has_sub_service",
+            "type": "boolean",
+            "def": "false"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "booking",
+            "type": "belongsTo",
+            "model": "Booking"
+        },
+        {
+            "name": "service",
+            "type": "belongsTo",
+            "model": "Service"
+        }
+    ]
+}

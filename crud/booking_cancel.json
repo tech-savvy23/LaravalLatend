@@ -1,0 +1,32 @@
+{
+    "type": "api",
+    "fields": [
+        {
+            "name": "booking_id",
+            "type": "unsignedBigInteger",
+            "index": true
+        },
+        {
+            "name": "user_id",
+            "type": "unsignedBigInteger",
+            "index": true
+        },
+        {
+            "name": "user_type",
+            "length": "5",
+            "type": "string"
+        },
+        {
+            "name": "reason",
+            "type": "text",
+            "nullable": true
+        }
+    ],
+    "relationships": [
+        {
+            "name": "booking",
+            "type": "belongsTo",
+            "model": "Booking"
+        }
+    ]
+}

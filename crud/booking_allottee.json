@@ -1,0 +1,33 @@
+{
+    "type": "api",
+    "fields": [
+        {
+            "name": "booking_id",
+            "type": "unsignedBigInteger",
+            "index": true
+        },
+        {
+            "name": "allottee_id",
+            "type": "unsignedBigInteger",
+            "index": true
+        },
+        {
+            "name": "allottee_type",
+            "length": "5",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "length": "5",
+            "type": "string",
+            "nullable": true
+        }
+    ],
+    "relationships": [
+        {
+            "name": "booking",
+            "type": "belongsTo",
+            "model": "Booking"
+        }
+    ]
+}

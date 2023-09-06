@@ -1,0 +1,38 @@
+{
+    "type": "api",
+    "fields": [
+        {
+            "name": "state_id",
+            "length": 200,
+            "type": "unsignedBigInteger",
+            "index": true
+        },
+        {
+            "name": "city_id",
+            "length": 200,
+            "type": "unsignedBigInteger",
+            "index": true
+        },
+        {
+            "name": "price",
+            "type": "decimal"
+        },
+        {
+            "name": "type",
+            "type": "string",
+            "default": "Auditor"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "state",
+            "type": "belongsTo",
+            "model": "State"
+        },
+        {
+            "name": "city",
+            "type": "belongsTo",
+            "model": "City"
+        }
+    ]
+}

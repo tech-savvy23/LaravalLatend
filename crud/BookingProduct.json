@@ -1,0 +1,27 @@
+{
+    "type": "api",
+    "fields": [
+        {
+            "name": "booking_id",
+            "type": "unsignedBigInteger",
+            "index": true
+        },
+        {
+            "name": "product_id",
+            "type": "unsignedBigInteger",
+            "index": true
+        }
+    ],
+    "relationships": [
+        {
+            "name": "booking",
+            "type": "belongsTo",
+            "model": "Booking"
+        },
+        {
+            "name": "products",
+            "type": "belongsTo",
+            "model": "Product"
+        }
+    ]
+}

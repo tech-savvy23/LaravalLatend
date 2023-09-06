@@ -1,0 +1,41 @@
+{
+    "type": "api",
+    "fields": [
+        {
+            "name": "title",
+            "type": "string",
+            "index": true
+        },
+        {
+            "name": "description",
+            "type": "text"
+        },
+        {
+            "name": "price",
+            "type": "decimal"
+        },
+        {
+            "name": "distributor_id",
+            "type": "unsignedBigInteger",
+            "index": true
+        },
+        {
+            "name": "product_category_id",
+            "type": "unsignedBigInteger",
+            "nullable": true,
+            "index": true
+        }
+    ],
+    "relationships": [
+        {
+            "name": "category",
+            "type": "belongsTo",
+            "model": "ProductCategory"
+        },
+        {
+            "name": "distributor",
+            "type": "belongsTo",
+            "model": "Distributor"
+        }
+    ]
+}

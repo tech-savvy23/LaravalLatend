@@ -1,0 +1,68 @@
+{
+    "type": "api",
+    "fields": [
+        {
+            "name": "booking_id",
+            "type": "unsignedBigInteger",
+            "index": true
+        },
+        {
+            "name": "checklist_id",
+            "type": "unsignedBigInteger",
+            "index": true
+        },
+        {
+            "name": "checklist_type_id",
+            "type": "unsignedBigInteger",
+            "index": true
+        },
+        {
+            "name": "report_id",
+            "type": "unsignedBigInteger",
+            "index": true
+        },
+        {
+            "name": "selected_option_id",
+            "type": "unsignedBigInteger",
+            "index": true,
+            "nullable": true
+        },
+        {
+            "name": "observation",
+            "type": "text",
+            "nullable": true
+        },
+        {
+            "name": "result",
+            "type": "string",
+            "nullable": true
+        }
+    ],
+    "relationships": [
+        {
+            "name": "booking",
+            "type": "belongsTo",
+            "model": "Booking"
+        },
+        {
+            "name": "report",
+            "type": "belongsTo",
+            "model": "Report"
+        },
+        {
+            "name": "checklist",
+            "type": "belongsTo",
+            "model": "Checklist"
+        },
+        {
+            "name": "type",
+            "type": "belongsTo",
+            "model": "ChecklistType"
+        },
+        {
+            "name": "selected_option",
+            "type": "belongsTo",
+            "model": "ReportOption"
+        }
+    ]
+}

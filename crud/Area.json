@@ -1,0 +1,19 @@
+{
+    "type": "api",
+    "fields": [
+        {
+            "name": "type",
+            "type": "string",
+            "index": true
+        },
+        {
+            "name": "amount",
+            "type": "unsignedBitInterger"
+        },
+        {
+            "name": "status",
+            "type": "boolean",
+            "def": false
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "type": "api",
+    "fields": [
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "slug",
+            "type": "string",
+            "index": true
+        }
+    ],
+    "relationships": [
+        {
+            "name": "product",
+            "type": "hasMany",
+            "model": "Product"
+        }
+    ]
+}

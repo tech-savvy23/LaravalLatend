@@ -1,0 +1,22 @@
+{
+    "type": "api",
+    "fields": [
+        {
+            "name": "title",
+            "type": "string",
+            "index": true
+        },
+        {
+            "name": "checklist_id",
+            "type": "unsignedBigInteger",
+            "index": true
+        }
+    ],
+    "relationships": [
+        {
+            "name": "checklist",
+            "type": "belongsTo",
+            "model": "Checklist"
+        }
+    ]
+}

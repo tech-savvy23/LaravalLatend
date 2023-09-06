@@ -1,0 +1,38 @@
+{
+    "type": "api",
+    "fields": [
+        {
+            "name": "pin",
+            "length": 200,
+            "type": "string",
+            "index": true
+        },
+        {
+            "name": "body",
+            "type": "string"
+        },
+        {
+            "name": "landmark",
+            "type": "string"
+        },
+        {
+            "name": "latitude",
+            "type": "string"
+        },
+        {
+            "name": "longitude",
+            "type": "string"
+        },
+        {
+            "name": "user_id",
+            "type": "unsignedBigInteger"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "user",
+            "type": "belongsTo",
+            "model": "UserLogin"
+        }
+    ]
+}

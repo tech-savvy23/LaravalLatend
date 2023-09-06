@@ -1,0 +1,51 @@
+{
+    "type": "api",
+    "fields": [
+        {
+            "name": "address_id",
+            "type": "unsignedBigInteger",
+            "index": true
+        },
+        {
+            "name": "user_id",
+            "type": "unsignedBigInteger",
+            "index": true
+        },
+        {
+            "name": "area_id",
+            "type": "unsignedBigInteger",
+            "index": true
+        },
+        {
+            "name": "discount",
+            "type": "unsignedBigInteger",
+            "index": true
+        },
+        {
+            "name": "date_time",
+            "type": "dataTime"
+        },
+        {
+            "name": "status",
+            "type": "boolean",
+            "def": false
+        },
+        {
+            "name": "otp_status",
+            "type": "boolean",
+            "def": false
+        }
+    ],
+    "relationships": [
+        {
+            "name": "address",
+            "type": "belongsTo",
+            "model": "Address"
+        },
+        {
+            "name": "user",
+            "type": "belongsTo",
+            "model": "User"
+        }
+    ]
+}

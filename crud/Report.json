@@ -1,0 +1,42 @@
+{
+    "type": "api",
+    "fields": [
+        {
+            "name": "title",
+            "type": "text"
+        },
+        {
+            "name": "checklist_id",
+            "type": "unsignedBigInteger",
+            "index": true
+        },
+        {
+            "name": "checklist_type_id",
+            "type": "unsignedBigInteger",
+            "index": true,
+            "nullable": true
+        },
+        {
+            "name": "body",
+            "type": "text",
+            "nullable": true
+        }
+    ],
+    "relationships": [
+        {
+            "name": "checklist",
+            "type": "belongsTo",
+            "model": "Checklist"
+        },
+        {
+            "name": "checklist_type",
+            "type": "belongsTo",
+            "model": "ChecklistType"
+        },
+        {
+            "name": "options",
+            "type": "hasMany",
+            "model": "ReportOption"
+        }
+    ]
+}

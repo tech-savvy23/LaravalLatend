@@ -1,0 +1,43 @@
+
+apt-get install wkhtmltopdf
+sudo apt install xvfb
+
+sudo ln -s /usr/bin/wkhtmltopdf /usr/local/bin/wkhtmltopdf
+sudo ln -s /usr/bin/wkhtmltoimage /usr/local/bin/wkhtmltoimage
+
+sudo apt-get install openssl build-essential xorg libssl-dev -y
+
+https://stackoverflow.com/questions/9604625/wkhtmltopdf-cannot-connect-to-x-server/9685072#9685072
+
+install wkhtmltopdf in aws ubuntu
+odoo.yenthevg.com/install-wkhtmltopdf-on-ubuntu/
+
+
+
+
+Deplpoy Script:
+sudo apt-get update
+sudo apt-get install nginx -y
+sudo service nginx start
+sudo apt install php-fpm php-mysql -y
+sudo apt install mysql-server -y
+
+
+sudo apt-get install composer zip unzip -y
+sudo apt-get install php7.2-simplexml php7.2-dom php7.2-mbstring php7.2-bcmath php7.2-curl php7.2-gd
+
+sudo composer install
+
+# after setting laravel
+sudo chown -R www-data:www-data storage
+
+
+.env
+1. key:genearate
+2. jwt:secret
+3. setup database
+4. setup mail
+5. setup aws
+6. set DISK=s3
+7. PDF_HTML_BINARY="xvfb-run /usr/local/bin/wkhtmltopdf"
+8. PDF_IMAGE_BINARY="xvfb-run /usr/local/bin/wkhtmltopdf"

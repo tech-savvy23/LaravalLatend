@@ -1,0 +1,20 @@
+{
+    "type": "api",
+    "fields": [
+        {
+            "name": "name",
+            "length": 200,
+            "type": "string",
+            "index": true
+        },
+        {
+            "name": "discount",
+            "type": "unsignedBigInteger"
+        },
+        {
+            "name": "service",
+            "type": "string",
+            "nullable": true
+        }
+    ]
+}

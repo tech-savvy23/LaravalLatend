@@ -1,0 +1,31 @@
+{
+    "type": "api",
+    "fields": [
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "slug",
+            "type": "string",
+            "index": true
+        },
+        {
+            "name": "has_type",
+            "type": "boolean",
+            "index": true
+        }
+    ],
+    "relationships": [
+        {
+            "name": "reports",
+            "type": "hasMany",
+            "model": "Report"
+        },
+        {
+            "name": "types",
+            "type": "hasMany",
+            "model": "ChecklistType"
+        }
+    ]
+}

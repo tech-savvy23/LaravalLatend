@@ -1,0 +1,25 @@
+{
+    "type": "api",
+    "fields": [
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "report_id",
+            "type": "unsignedBigInteger",
+            "index": true
+        },
+        {
+            "name": "message",
+            "type": "text"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "report",
+            "type": "belongsTo",
+            "model": "Report"
+        }
+    ]
+}

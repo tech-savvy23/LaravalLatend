@@ -1,0 +1,30 @@
+{
+    "type": "api",
+    "fields": [
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "email",
+            "type": "string",
+            "index": true
+        },
+        {
+            "name": "mobile",
+            "type": "unsignedBigInteger",
+            "index": true
+        },
+        {
+            "name": "password",
+            "type": "string"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "products",
+            "type": "hasMany",
+            "model": "Product"
+        }
+    ]
+}

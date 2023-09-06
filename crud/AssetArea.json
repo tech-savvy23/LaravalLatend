@@ -1,0 +1,18 @@
+{
+    "type": "api",
+    "fields": [
+        {
+            "name": "title",
+            "length": 200,
+            "type": "string",
+            "index": true
+        }
+    ],
+    "relationships": [
+        {
+            "name": "item",
+            "type": "hasMany",
+            "model": "AssetItem"
+        }
+    ]
+}

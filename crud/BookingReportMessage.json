@@ -1,0 +1,29 @@
+{
+    "type": "api",
+    "fields": [
+        {
+            "name": "booking_id",
+            "type": "unsignedBigInteger"
+        },
+        {
+            "name": "report_id",
+            "type": "unsignedBigInteger"
+        },
+        {
+            "name": "message_id",
+            "type": "unsignedBigInteger"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "report",
+            "type": "belongsTo",
+            "model": "Report"
+        },
+        {
+            "name": "message",
+            "type": "belongsTo",
+            "model": "ReportOptionMessage"
+        }
+    ]
+}

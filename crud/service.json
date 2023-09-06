@@ -1,0 +1,20 @@
+{
+    "type": "api",
+    "fields": [
+        {
+            "name": "name",
+            "length": "150",
+            "type": "string",
+            "index": true
+        },
+        {
+            "name": "thumbnail",
+            "type": "string"
+        },
+        {
+            "name": "description",
+            "type": "text",
+            "nullable": true
+        }
+    ]
+}

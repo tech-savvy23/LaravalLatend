@@ -1,0 +1,43 @@
+{
+    "type": "api",
+    "fields": [
+        {
+            "name": "asset_item_id",
+            "type": "unsignedBigInteger",
+            "index": true
+        },
+        {
+            "name": "booking_id",
+            "type": "unsignedBigInteger",
+            "index": true
+        },
+        {
+            "name": "number",
+            "type": "unsignedInteger"
+        },
+        {
+            "name": "phase",
+            "type": "string"
+        },
+        {
+            "name": "voltage",
+            "type": "unsignedBigInteger"
+        },
+        {
+            "name": "current",
+            "type": "unsignedBigInteger"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "item",
+            "type": "belongsTo",
+            "model": "AssetItem"
+        },
+        {
+            "name": "booking",
+            "type": "belongsTo",
+            "model": "Booking"
+        }
+    ]
+}

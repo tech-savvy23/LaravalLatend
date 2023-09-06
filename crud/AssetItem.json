@@ -1,0 +1,26 @@
+{
+    "type": "api",
+    "fields": [
+        {
+            "name": "area_id",
+            "type": "unsignedBigInteger",
+            "index": true
+        },
+        {
+            "name": "description",
+            "type": "text"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "area",
+            "type": "belongsTo",
+            "model": "AssetArea"
+        },
+        {
+            "name": "booking_asset",
+            "type": "many",
+            "model": "BookingAsset"
+        }
+    ]
+}
